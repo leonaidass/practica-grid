@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
+
+.container {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 300px;
+    gap: 20px;
+    padding: 80px 70px;
+    /* margin: 30px; */
+
+}
+
+.containerCard {
+
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: grey;
+    /* transition: .8s; */
+}
+
+/* .containerCard img:hover {
+    transform: scale(1.5);
+
+} */
+
+/* .num1 {
+    grid-column: span 2
+} */
+
+.num2 {
+    grid-area: span 1 / span 2;
+}
+
+.num3 {
+    grid-area: span 2 / span 1;
+}
+
+.num4 {
+    grid-column: span 3;
+
+}
+
+.num5 {
+    grid-area: span 2 / span 2;
+}
+
+.container2 {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 50px;
+
+}
+
+.imgCont {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.containerGrid {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+
+}
+
+.containerGrid>div {
+    border: 10px solid white;
+}
+
+.grid1 {
+    grid-area: span 1 / span 2;
+
+
+}
+
+.grid7 {
+    grid-area: span 1 / span 2;
+
+
+}
+
+.titulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    
+    width: 80%;
+    height: 300px;
+    
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(3px);
+    border-radius: 30px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.contenido h1{
+    font-size: 70px;
+    font-weight: bold;
+
+}
+
+.contenido h2{
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
